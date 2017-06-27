@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="src/ctrl8.js"></script>
+    <script src="src/space8.js"></script>
+</head>
+<body>
+    <svg id="CANVAS" init="{ZoomScale:.5}" style="width:800px;height:800px;border:1px solid #F0F0F0">
+        <circle cx="0" cy="0" r="100"/>
+    </svg>
+    <script>
+        var C = new Svg8({
+            "DOM": "#CANVAS"
+        });
+
+        Space8.Util.EnableSpan(document.querySelector("#CANVAS"), function (e,p) {
+            C.Span(-p.dx, -p.dy, 1);            
+        })
+    </script>
+</body>
+</html>
