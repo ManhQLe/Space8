@@ -43,11 +43,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="release\Ctrl8.js" />
+    <Content Include="release\Space8.js" />
+    <Content Include="release\Space8.min.js" />
     <Content Include="src\Ctrl8.js" />
     <Content Include="src\Space8.js" />
+    <Content Include="Web.html" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="release\" />
+    <None Include="makerelease.bat" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
